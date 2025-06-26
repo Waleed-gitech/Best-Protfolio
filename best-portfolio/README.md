@@ -16,7 +16,7 @@ It includes my projects, contact information, and listed skills.
 - Contact
 
 ## 🔗 Live Link
-[Click here to view my portfolio](https://your-Waleedkhan123354.github.io/your-portfolio/)
+[Click here to view my portfolio](https://github.com/Waleed-gitech/Best-Protfolio.git/)
 
 ## 📧 Contact
 Email: waleedkhani426@gmail.com  
