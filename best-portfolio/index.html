@@ -39,7 +39,7 @@
     </style>
 </head>
 <body class="bg-darker text-light font-sans antialiased">
-    <!-- Navigation -->
+   
     <nav class="fixed w-full bg-dark bg-opacity-90 backdrop-blur-sm z-50 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <!-- Mobile menu -->
+      
         <div id="mobile-menu" class="hidden md:hidden bg-dark pb-4 px-4">
             <a href="#home" class="block py-2 text-light hover:text-primary transition">Home</a>
             <a href="#about" class="block py-2 text-light hover:text-primary transition">About</a>
@@ -70,7 +70,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    
     <section id="home" class="min-h-screen flex items-center pt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
@@ -96,7 +96,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    
     <section id="about" class="py-20 bg-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-2 text-center">About <span class="text-primary">Me</span></h2>
@@ -142,7 +142,7 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+   
     <section id="skills" class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-2 text-center">My <span class="text-primary">Skills</span></h2>
@@ -285,14 +285,13 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-20 bg-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-2 text-center">My <span class="text-primary">Projects</span></h2>
             <div class="w-20 h-1 bg-primary mx-auto mb-12"></div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
+                
                 <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-xl transition-transform hover:scale-105">
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
@@ -320,7 +319,7 @@
                     </div>
                 </div>
                 
-                <!-- Project 2 -->
+              
                 <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-xl transition-transform hover:scale-105">
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" 
@@ -348,7 +347,7 @@
                     </div>
                 </div>
                 
-                <!-- Project 3 -->
+
                 <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-xl transition-transform hover:scale-105">
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
@@ -385,7 +384,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    
     <section id="contact" class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-2 text-center">Get In <span class="text-primary">Touch</span></h2>
@@ -476,7 +475,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer class="bg-dark py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -495,13 +494,13 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
+
     <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <script>
-        // Mobile menu toggle
+       
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -509,7 +508,7 @@
             mobileMenu.classList.toggle('hidden');
         });
         
-        // Smooth scrolling for navigation links
+       
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -523,13 +522,13 @@
                         behavior: 'smooth'
                     });
                     
-                    // Close mobile menu if open
+                
                     mobileMenu.classList.add('hidden');
                 }
             });
         });
         
-        // Back to top button
+       
         const backToTopBtn = document.getElementById('back-to-top');
         
         window.addEventListener('scroll', () => {
@@ -549,7 +548,7 @@
             });
         });
         
-        // Animate skill bars when they come into view
+        
         const skillBars = document.querySelectorAll('.skill-bar');
         
         const animateSkillBars = () => {
@@ -561,10 +560,10 @@
             });
         };
         
-        // Run once on page load
+        
         animateSkillBars();
         
-        // Run on scroll
+       
         window.addEventListener('scroll', animateSkillBars);
     </script>
 </body>
